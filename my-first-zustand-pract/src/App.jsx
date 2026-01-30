@@ -1,0 +1,14 @@
+import './App.css'
+import Counter from "./components/Counter"
+
+function App() {
+
+  return (
+    <>
+    <h1>Zustand Practice</h1>
+     <Counter />
+    </>
+  )
+}
+
+export default App

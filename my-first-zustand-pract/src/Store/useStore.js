@@ -1,0 +1,15 @@
+import { create } from 'zustand'
+
+const useStore = create((set)=>(
+    {
+  //the state
+  count: 0, 
+
+  //the action to update the state using set function
+  increment: ()=> set((state)=>({count:state.count + 1})),
+  decrement: ()=> set((state)=>({count: state.count - 1})),
+  reset: ()=>set({count: 0})
+    }
+))
+
+export default useStore;
